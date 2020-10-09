@@ -9,7 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "wordpos": "^2.0.0"
+    "wordpos-web": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4"
   }
 }

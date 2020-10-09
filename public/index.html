@@ -39,5 +39,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="wordpos/dist/wordpos.min.js"></script>
+    <script>
+      let wordpos = new WordPOS({
+        // preload: true,
+        dictPath: '/wordpos/dict',
+        profile: true
+      });
+    
+      wordpos.getAdverbs('this is lately a likely tricky business this is')
+        .then(res => {
+          console.log(res); // ["lately", "likely"]
+        });
+    </script>
   </body>
 </html>
